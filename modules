@@ -1,0 +1,13 @@
+src/abstract/align                    a-align                         git@github.com:sashulinator/a-align.git
+src/abstract/button                   a-button                        git@github.com:sashulinator/a-button.git
+src/abstract/collapse                 a-collapse                      git@github.com:sashulinator/a-collapse.git
+src/abstract/modal                    a-modal                         git@github.com:sashulinator/a-modal.git
+src/abstract/text-input               a-text-input                    git@github.com:sashulinator/a-text-input.git
+src/abstract/unstyled-button          a-unstyled-button               git@github.com:sashulinator/a-unstyled-button.git
+src/shared/themes                     theme-colibri                   git@github.com:sashulinator/theme-colibri.git
+src/utils/core                        utils-core                      git@github.com:sashulinator/utils-core.git
+src/utils/dictionary                  utils-dictionary                git@github.com:sashulinator/utils-dictionary.git
+src/utils/error                       utils-error                     git@github.com:sashulinator/utils-error.git
+src/utils/hooks                       utils-hooks                     git@github.com:sashulinator/utils-hooks.git
+src/utils/list                        utils-list                      git@github.com:sashulinator/utils-list.git
+src/utils/types                       utils-types                     git@github.com:sashulinator/utils-types.git

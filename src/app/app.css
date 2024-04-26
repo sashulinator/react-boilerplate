@@ -1,0 +1,7 @@
+* {
+  caret-color: var(--caretColor);
+}
+*::selection {
+  color: var(--selectionColor) !important;
+  background-color: var(--selectionBg) !important;
+}

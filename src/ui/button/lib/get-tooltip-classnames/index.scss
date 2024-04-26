@@ -1,0 +1,17 @@
+.Button.--tooltip {
+  background: var(--Button_bg--tooltip);
+  color: var(--Button_color--tooltip);
+  border: var(--Button_border--tooltip);
+
+  &:hover {
+    background: var(--Button_bg--tooltip--hover);
+  }
+
+  &:active {
+    background: var(--Button_bg--tooltip--active);
+  }
+
+  &:disabled {
+    background: var(--Button_bg--tooltip--disabled);
+  }
+}

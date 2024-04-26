@@ -1,0 +1,18 @@
+.ui-Link {
+  outline: none;
+  color: var(--link_color);
+  text-decoration: none;
+
+  &:focus {
+    /* TODO наверное не стоит завязываться на Button */
+    box-shadow: 0px 0px 0px var(--Button_outlineWidth) var(--Button_outlineColor);
+  }
+}
+
+.ui-Link:hover {
+  text-decoration: underline;
+}
+
+.ui-Link:hover.Button {
+  text-decoration: none;
+}

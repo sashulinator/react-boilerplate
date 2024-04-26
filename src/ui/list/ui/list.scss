@@ -1,0 +1,8 @@
+.ui-List {
+  outline: none;
+  width: 100%;
+
+  &:focus {
+    box-shadow: 0px 0px 0px var(--Button_outlineWidth) var(--Button_outlineColor);
+  }
+}

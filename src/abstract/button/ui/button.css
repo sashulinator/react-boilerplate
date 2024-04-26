@@ -1,0 +1,16 @@
+/**
+ * Main
+ */
+
+.a-Button {
+  outline: 0;
+  font: inherit;
+}
+
+/**
+ * Theme
+ */
+
+/* .a-Button:focus {
+  box-shadow: 0px 0px 0px var(--button_outlineWidth) var(--button_outlineColor);
+} */

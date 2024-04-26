@@ -1,0 +1,16 @@
+.ui-Accordion-v-Chevron {
+}
+
+.ui-Accordion-v-Chevron > .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 2px 2px 0;
+}
+
+.ui-Accordion-v-Chevron > .header > button .arrow {
+  transition: transform 0.3s;
+}
+.ui-Accordion-v-Chevron > .header > button .arrow.--rotated {
+  transform: rotate(90deg);
+}

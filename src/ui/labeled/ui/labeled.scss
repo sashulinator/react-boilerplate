@@ -1,0 +1,31 @@
+.ui-Labeled {
+  display: flex;
+  width: 100%;
+
+  > .label {
+    font-size: 0.8em;
+    opacity: 0.7;
+  }
+}
+
+.ui-Labeled.--hidden {
+  display: none;
+}
+
+.ui-Labeled.--vertical {
+  flex-direction: column;
+
+  > .label {
+    margin-bottom: var(--s);
+  }
+}
+
+.ui-Labeled.--horizontal {
+  flex-direction: row;
+
+  > .label {
+    display: flex;
+    align-items: center;
+    padding-right: var(--m);
+  }
+}

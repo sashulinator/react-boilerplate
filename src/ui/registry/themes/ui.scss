@@ -1,0 +1,8 @@
+.ui-Registry-w-Item {
+  background: var(--ui-Registry-item_bg);
+
+  &:hover,
+  &:focus-within {
+    background: var(--ui-Registry-item_bg--heighlighted);
+  }
+}

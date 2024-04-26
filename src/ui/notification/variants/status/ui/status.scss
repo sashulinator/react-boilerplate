@@ -1,0 +1,32 @@
+.ui-Notification-v-Default {
+  padding-top: var(--xl);
+
+  & > .content {
+    width: 25rem;
+    background-color: black;
+    color: rgb(222, 222, 222);
+    padding: var(--xxxl) var(--xxxl) var(--xxxl) var(--xl);
+    border-radius: var(--l);
+    display: flex;
+    gap: var(--l);
+    box-shadow: 2px 28px 49px 38px rgba(40, 43, 45, 0.2);
+  }
+
+  & > .content > .indicator {
+    width: var(--xl);
+    height: var(--xl);
+    border-radius: 2rem;
+  }
+
+  &.--success {
+    & > .content > .indicator {
+      background-color: var(--successColor);
+    }
+  }
+
+  &.--error {
+    & > .content > .indicator {
+      background-color: var(--errorColor);
+    }
+  }
+}

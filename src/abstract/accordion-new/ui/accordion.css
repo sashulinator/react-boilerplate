@@ -1,0 +1,11 @@
+.an-Accordion.--s > .header {
+  height: var(--Accordion_height--s);
+}
+
+.an-Accordion.--m > .header {
+  height: var(--Accordion_height--m);
+}
+
+.an-Accordion.--l > .header {
+  height: var(--Accordion_height--l);
+}

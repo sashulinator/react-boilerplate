@@ -1,0 +1,20 @@
+.ui-Item {
+  //
+
+  .ui-Item-w-Hidable {
+    transition: opacity 150ms;
+    display: flex;
+    opacity: 0;
+
+    &:empty {
+      display: none;
+    }
+  }
+
+  &:hover,
+  &:focus-within {
+    .ui-Item-w-Hidable {
+      opacity: 1;
+    }
+  }
+}

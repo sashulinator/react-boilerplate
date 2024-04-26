@@ -1,0 +1,70 @@
+.ui-Field {
+  background: var(--ui-Field_bg);
+
+  /* COLORS */
+
+  &.--mainBg {
+    background: var(--bg);
+  }
+
+  &.--mainBg:hover,
+  &:hover {
+    background: var(--ui-Field_bg--hover);
+    box-shadow: 0px 0px 0px 1px var(--focus);
+  }
+
+  &.--mainBg.--focused,
+  &.--focused {
+    background: var(--ui-Field_bg--focus);
+    box-shadow: 0px 0px 0px 4px var(--focus);
+  }
+
+  &.--mainBg.--disabled,
+  &.--disabled {
+    background: var(--ui-Field_bg--disabled);
+    box-shadow: 0px 0px 0px 0;
+  }
+
+  &.--error {
+    background: var(--ui-Field_bg--error);
+  }
+
+  &.--error:hover {
+    background: var(--ui-Field_bg--error--hover);
+  }
+
+  &.--error.--focused {
+    background: var(--ui-Field_bg--error--focus);
+  }
+
+  /* SIZES */
+
+  &.--s {
+    height: var(--ui-Field_height--s);
+  }
+  &.--m {
+    height: var(--ui-Field_height--m);
+  }
+  &.--l {
+    height: var(--ui-Field_height--l);
+  }
+
+  /* VARIANTS */
+
+  &.--transparent {
+    background-color: transparent !important;
+    border-color: transparent !important;
+  }
+
+  &.--insetFocus {
+    &:hover {
+      box-shadow: 0px 0px 0px 1px var(--focus) inset;
+    }
+    &.--focused {
+      box-shadow: 0px 0px 0px 4px var(--focus) inset;
+    }
+    &.--disabled {
+      box-shadow: 0px 0px 0px 0;
+    }
+  }
+}

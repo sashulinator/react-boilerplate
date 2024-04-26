@@ -1,0 +1,49 @@
+{
+  "entityName": "Название Сущности",
+  "picked": "Выбрано",
+  "copied": "Скопировано",
+  "error": "Ошибка",
+  "entities": {
+    "attribute": "Атрубут",
+    "attributes": "Атрибуты",
+    "calcAttribute": "Расчетный атрибут",
+    "calcAttributes": "Расчетные атрибуты",
+    "decision": "Решение",
+    "decisions": "Деревья решений",
+    "domain": "Домен",
+    "domains": "Домены",
+    "offer": "Сообщение",
+    "offers": "Сообщений",
+    "offerAttribute": "Атрубут сообщений",
+    "offerAttributes": "Атрибуты сообщений",
+    "offerAttributeGroup": "Группа атрибутов сообщений",
+    "offerAttributeGroups": "Группы атрибутов сообщений",
+    "rule": "Правило",
+    "rules": "Правила",
+    "sourceSystem": "Система источник",
+    "sourceSystems": "Системы источники"
+  },
+  "pages": {
+    "attributes": "Атрибуты",
+    "attributes_create": "Создать Атрибут",
+    "attributes_id": "Атрибут",
+    "settings": "Настройки"
+  },
+  "pagination": {
+    "pages": "Страниц",
+    "items": "Элементов"
+  },
+  "field": {
+    "name": "Название",
+    "keyName": "Системное Название",
+    "time": "Время",
+    "created": "Создано",
+    "updated": "Обновлено",
+    "updater": "Обновил",
+    "creator": "Создал"
+  },
+  "hotkeys": "Клавиши",
+  "click": "Клик",
+  "openInNewTab": "Открыть в новой вкладке",
+  "login": "Войти"
+}

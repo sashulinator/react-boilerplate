@@ -1,0 +1,16 @@
+.ui-Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--xxxl);
+  // background: var(--bgSecondary);
+
+  .logo-link {
+    color: var(--color);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--primary);
+    }
+  }
+}

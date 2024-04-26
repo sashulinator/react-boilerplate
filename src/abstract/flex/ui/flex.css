@@ -1,0 +1,64 @@
+.a-Flex {
+  display: flex;
+}
+
+.a-Flex.--column {
+  flex-direction: column;
+}
+.a-Flex.--row {
+  flex-direction: row;
+}
+
+.a-Flex.--xs {
+  gap: var(--xs);
+}
+.a-Flex.--s {
+  gap: var(--s);
+}
+.a-Flex.--m {
+  gap: var(--m);
+}
+.a-Flex.--l {
+  gap: var(--l);
+}
+.a-Flex.--xl {
+  gap: var(--xl);
+}
+.a-Flex.--xxl {
+  gap: var(--xxl);
+}
+.a-Flex.--xxxl {
+  gap: var(--xxxl);
+}
+
+.a-Flex.--mainAxis-center {
+  justify-content: center;
+}
+.a-Flex.--mainAxis-start {
+  justify-content: flex-start;
+}
+.a-Flex.--mainAxis-end {
+  justify-content: flex-end;
+}
+.a-Flex.--mainAxis-space-between {
+  justify-content: space-between;
+}
+.a-Flex.--mainAxis-space-around {
+  justify-content: space-around;
+}
+.a-Flex.--mainAxis-space-evenly {
+  justify-content: space-evenly;
+}
+
+.a-Flex.--crossAxis-center {
+  align-items: center;
+}
+.a-Flex.--crossAxis-start {
+  align-items: start;
+}
+.a-Flex.--crossAxis-end {
+  align-items: end;
+}
+.a-Flex.--crossAxis-stretch {
+  align-items: stretch;
+}

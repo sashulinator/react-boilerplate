@@ -1,0 +1,33 @@
+.a-Notification-v-List {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+
+  & > .group {
+    position: absolute;
+  }
+
+  & > .group > * {
+    pointer-events: all;
+  }
+
+  & > .group.--top {
+    top: var(--xl);
+  }
+  & > .group.--bottom {
+    bottom: var(--xl);
+  }
+  & > .group.--left {
+    left: var(--xl);
+  }
+  & > .group.--center {
+    left: 50%;
+    transform: translate(-50%);
+  }
+  & > .group.--right {
+    right: var(--xl);
+  }
+}

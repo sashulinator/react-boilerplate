@@ -1,0 +1,11 @@
+.ui-Hint {
+  font-size: 0.8rem;
+
+  &.--error {
+    color: var(--Hint_color--error);
+  }
+
+  &.--success {
+    color: var(--Hint_color--success);
+  }
+}

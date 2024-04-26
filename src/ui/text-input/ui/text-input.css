@@ -1,0 +1,9 @@
+.ui-TextInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ui-TextInput > .input {
+  padding: 0 var(--l);
+}

@@ -1,0 +1,21 @@
+.hidden {
+  visibility: hidden;
+}
+
+.transparent {
+  opacity: 0;
+}
+
+.nonselectable {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.bg {
+  background-color: var(--bg);
+}
+
+.bg-secondary {
+  background-color: var(--bgSecondary);
+}

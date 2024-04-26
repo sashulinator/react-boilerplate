@@ -1,0 +1,22 @@
+.ui-Registry-w-Item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--m);
+  padding: var(--l) var(--m) var(--l) var(--l);
+  outline: 0;
+
+  &:hover,
+  &:focus-within {
+    > .actions {
+      opacity: 1;
+    }
+  }
+
+  > .actions {
+    transition: opacity 0.2;
+    display: flex;
+    opacity: 0;
+  }
+}

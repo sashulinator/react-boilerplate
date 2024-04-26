@@ -1,0 +1,22 @@
+.ui-Accordion {
+  border-radius: var(--m);
+}
+
+/* HEIGHT */
+.ui-Accordion.--s > *:first-child {
+  height: var(--Accordion_height--s);
+}
+.ui-Accordion.--m > *:first-child {
+  height: var(--Accordion_height--m);
+}
+.ui-Accordion.--l > *:first-child {
+  height: var(--Accordion_height--l);
+}
+
+/* VARIANTS */
+.ui-Accordion.--bg {
+  background-color: var(--bg);
+}
+.ui-Accordion.--bgSecondary {
+  background-color: var(--bgSecondary);
+}

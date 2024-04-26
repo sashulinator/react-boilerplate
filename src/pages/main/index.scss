@@ -1,0 +1,25 @@
+.page-Main {
+  padding: var(--xxxl) 0 0 0;
+  display: flex;
+  user-select: none;
+  -webkit-user-select: none;
+
+  > div > .list > div {
+    background-color: var(--bgSecondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  > div > .list > div > a {
+    padding: var(--s);
+  }
+
+  .box > .movable {
+    visibility: hidden;
+  }
+
+  .box:hover > .movable {
+    visibility: visible;
+  }
+}

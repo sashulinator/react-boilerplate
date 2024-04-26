@@ -1,0 +1,57 @@
+{
+  "entityName": "Entity Name",
+
+  "picked": "Piked",
+  "copied": "Copied",
+  "error": "Error",
+
+  "entities": {
+    "attribute": "Attribute",
+    "attributes": "Attributes",
+    "calcAttribute": "Calculatable attribute",
+    "calcAttributes": "Calculatable attributes",
+    "decision": "Decision",
+    "decisions": "Decisions",
+    "domain": "Domain",
+    "domains": "Domains",
+    "offer": "Offer",
+    "offers": "Offers",
+    "offerAttribute": "Offer Attribute",
+    "offerAttributes": "Offer Attributes",
+    "offerAttributeGroup": "Offer Attribute Group",
+    "offerAttributeGroups": "Offer Attribute Groups",
+    "rule": "Rule",
+    "rules": "Rules",
+    "sourceSystem": "Source System",
+    "sourceSystems": "Source Systems"
+  },
+
+  "pages": {
+    "attributes": "Attributes",
+    "attributes_create": "Create Attribute",
+    "attributes_id": "Attribute",
+
+    "settings": "Settings"
+  },
+
+  "pagination": {
+    "pages": "Pages",
+    "items": "Items"
+  },
+
+  "field": {
+    "name": "Name",
+    "keyName": "System Name",
+    "time": "Time",
+    "created": "Created",
+    "updated": "Updated",
+    "updater": "Updater",
+    "creator": "Creator"
+  },
+
+  "hotkeys": "Hotkeys",
+  "click": "Click",
+  "openInNewTab": "Open in new tab",
+
+  "login": "Login"
+}

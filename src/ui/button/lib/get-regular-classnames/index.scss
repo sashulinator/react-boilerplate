@@ -1,0 +1,12 @@
+.Button.--regular {
+  background: var(--Button_bg--regular);
+  color: var(--Button_color--regular);
+
+  &:hover {
+    background: var(--Button_bg--regular--hover);
+  }
+
+  &:active {
+    background: var(--Button_bg--regular--active);
+  }
+}

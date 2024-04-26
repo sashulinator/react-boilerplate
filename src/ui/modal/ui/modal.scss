@@ -1,0 +1,57 @@
+.ui-Modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Modal_bg);
+
+  & > .wrapper {
+    position: relative;
+    animation: opacity 0.33s normal forwards;
+  }
+
+  & > .wrapper > .closeButton {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(calc(100% + var(--s)));
+    z-index: 1;
+  }
+}
+
+.ui-Modal.--opened.--blured {
+  animation: blur 0.3s normal forwards;
+}
+
+.ui-Modal.--closing.--blured {
+  animation: blurBackwards 0.3s normal forwards;
+}
+
+/**
+ * Animation
+ */
+
+@keyframes blur {
+  from {
+    backdrop-filter: blur(0);
+    -webkit-backdrop-filter: blur(0);
+    opacity: 0;
+  }
+  to {
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    opacity: 1;
+  }
+}
+
+@keyframes blurBackwards {
+  from {
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    opacity: 1;
+  }
+  to {
+    backdrop-filter: blur(0);
+    opacity: 0;
+    -webkit-backdrop-filter: blur(0);
+  }
+}

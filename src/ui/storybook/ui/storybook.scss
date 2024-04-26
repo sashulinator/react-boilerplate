@@ -1,0 +1,54 @@
+.ui-Storybook {
+  --description_height: 7rem;
+  height: 100%;
+  display: grid;
+
+  &.--description-showcase-controls {
+    grid-template-areas:
+      'description'
+      'showcase'
+      'controls';
+    grid-template-rows: calc(var(--description_height)) 1fr minmax(120px, 320px);
+  }
+
+  &.--description-showcase {
+    grid-template-areas:
+      'description'
+      'showcase';
+    grid-template-rows: calc(var(--description_height)) 1fr;
+  }
+
+  > .toolbar {
+    position: absolute;
+    right: var(--m);
+    top: var(--m);
+    z-index: 1;
+    > span {
+      transform: rotate(90deg);
+    }
+  }
+
+  > .description {
+    border-bottom: 1px solid var(--bgSecondary);
+    grid-area: description;
+  }
+
+  > .showcase {
+    border-bottom: 1px solid var(--bgSecondary);
+    grid-area: showcase;
+  }
+
+  > .controls {
+    display: flex;
+    flex-direction: column;
+    gap: var(--m);
+    grid-area: controls;
+  }
+
+  /* descriptionFullHeight */
+
+  &.--descriptionFullHeight,
+  &.--descriptionFullHeight > .description {
+    height: 100%;
+  }
+}

@@ -1,0 +1,21 @@
+/* 
+ * Main
+ */
+
+.ui-Mark {
+  border-radius: var(--s);
+  padding: 0.05rem var(--s);
+  background-color: var(--ui-Mark_highlight);
+}
+
+.ui-Mark.--transparent {
+  background-color: transparent;
+}
+
+/* 
+ * Theme
+ */
+
+.ui-Mark:hover {
+  background-color: var(--ui-Mark_highlight--hover);
+}

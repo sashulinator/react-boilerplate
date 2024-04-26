@@ -1,0 +1,15 @@
+.Button.--ghost {
+  color: var(--Button_color--ghost);
+
+  &:hover {
+    background: var(--Button_bg--ghost--hover);
+  }
+
+  &:active {
+    background: var(--Button_bg--ghost--active);
+  }
+
+  &.--disabled:hover {
+    background: transparent;
+  }
+}

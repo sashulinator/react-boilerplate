@@ -1,0 +1,55 @@
+.ui-Layout-v-Root {
+  display: grid;
+
+  nav {
+    grid-area: nav;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  /* APP CONFIGURATION */
+
+  &.main.--app {
+    grid-template-areas: 'main';
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  &.header-main.--app {
+    grid-template-areas:
+      'header header header'
+      'main main main';
+    grid-template-rows: calc(var(--header-height) * 1px) 1fr;
+    grid-template-columns: calc(var(--nav-width) * 1px) 1fr;
+  }
+
+  &.header-main-nav.--app {
+    grid-template-areas:
+      'header header header'
+      'nav main main';
+    grid-template-rows: calc(var(--header-height) * 1px) 1fr;
+    grid-template-columns: calc(var(--nav-width) * 1px) 1fr 1fr;
+  }
+
+  &.header-main-nav.--app {
+    grid-template-areas:
+      'header header header header'
+      'nav . main .';
+    grid-template-rows: calc(var(--header-height) * 1px) 1fr;
+    grid-template-columns: calc(var(--xxxl) * 2 + 2rem) 1fr minmax(320px, 1124px) 1fr;
+  }
+
+  /* STORYBOOK CONFIGURATION */
+
+  &.main-nav.--storybook {
+    grid-template-areas: 'nav main main';
+    grid-template-rows: 1fr;
+    grid-template-columns: calc(var(--nav-width) * 1px) 1fr 1fr;
+  }
+}

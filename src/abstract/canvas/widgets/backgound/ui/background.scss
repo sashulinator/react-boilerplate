@@ -1,0 +1,12 @@
+.a-Canvas-w-Background {
+  pointer-events: none;
+  background: var(--props-background_bg);
+
+  & > pattern > .dotPattern {
+    fill: var(--props-background_color);
+  }
+
+  & > pattern > .linePattern {
+    stroke: var(--props-background_color);
+  }
+}

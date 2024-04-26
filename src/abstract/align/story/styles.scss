@@ -1,0 +1,16 @@
+@keyframes fromRight33px {
+  from {
+    transform: translateX(33px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

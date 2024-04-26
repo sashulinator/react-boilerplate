@@ -1,0 +1,13 @@
+.ui-Field {
+  width: 100%;
+  display: flex;
+  outline: none;
+  border-radius: 0.5rem;
+  transition:
+    background 0.2s,
+    box-shadow 0.2s;
+
+  &.--hidden {
+    display: none;
+  }
+}

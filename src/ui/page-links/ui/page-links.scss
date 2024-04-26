@@ -1,0 +1,17 @@
+.ui-PageLinks {
+  width: 630px;
+  user-select: none;
+  height: 180px;
+
+  & > div {
+    border-radius: var(--l);
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    transform-origin: 50% 50% 0px;
+    color: white;
+    touch-action: none;
+    text-align: center;
+    padding: var(--l);
+  }
+}

@@ -1,0 +1,10 @@
+.ui-H2 {
+  font-size: 1.2em;
+
+  &.marginBottom--xxxl {
+    margin-bottom: var(--xxxl);
+  }
+  &.marginBottom--xl {
+    margin-bottom: var(--xl);
+  }
+}

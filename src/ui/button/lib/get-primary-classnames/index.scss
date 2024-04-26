@@ -1,0 +1,16 @@
+.Button.--primary {
+  background: var(--Button_bg--primary);
+  color: var(--Button_color--primary);
+
+  &:hover {
+    background: var(--Button_bg--primary--hover);
+  }
+
+  &:active {
+    background: var(--Button_bg--primary--active);
+  }
+
+  &:disabled {
+    background: var(--Button_bg--primary--disabled);
+  }
+}

@@ -1,0 +1,42 @@
+.Button {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.Button.--round {
+  border-radius: 50%;
+}
+
+.Button.--s {
+  height: var(--Button_height--s);
+}
+.Button.--m {
+  height: var(--Button_height--m);
+}
+.Button.--l {
+  height: var(--Button_height--l);
+}
+
+.Button.--padding.--s {
+  padding: 0 var(--Button_padding--s);
+}
+.Button.--padding.--m {
+  padding: 0 var(--Button_padding--m);
+}
+.Button.--padding.--l {
+  padding: 0 var(--Button_padding--l);
+}
+
+.Button.--square.--s {
+  min-width: var(--Button_height--s);
+  max-width: var(--Button_height--s);
+}
+.Button.--square.--m {
+  min-width: var(--Button_height--m);
+  max-width: var(--Button_height--m);
+}
+.Button.--square.--l {
+  min-width: var(--Button_height--l);
+  max-width: var(--Button_height--l);
+}

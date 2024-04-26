@@ -1,0 +1,21 @@
+{
+  "add": "Add",
+  "copy": "Copy",
+  "update": "Update",
+  "create": "Create",
+  "save": "Save",
+  "remove": "Remove",
+  "change": "Change",
+  "creating": "Creating...",
+  "updating": "Updating...",
+  "saving": "Saving...",
+
+  "success": {
+    "created": "Created",
+    "updated": "Updated"
+  },
+  "error": {
+    "create": "Could not create",
+    "update": "Could not update"
+  }
+}
