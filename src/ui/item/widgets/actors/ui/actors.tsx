@@ -1,7 +1,6 @@
 import dayjs from 'dayjs'
 
 import Flex, { FlexProps } from '~/abstract/flex'
-import { tName, tStrings, useT } from '~/lib/i18n'
 import Mark from '~/ui/mark'
 import { c } from '~/utils/core'
 
@@ -25,8 +24,6 @@ const displayName = 'ui-Item-w-Actors'
 export default function Component(props: Props): JSX.Element {
   const { instance, className, ...flexProps } = props
 
-  const t = useT(tStrings, tName)
-
   return (
     <Flex
       className={c(className, displayName)}
@@ -39,10 +36,10 @@ export default function Component(props: Props): JSX.Element {
       <Mark
         tooltipContent={
           <div style={{ width: 'max-content' }}>
-            {t.field.created()}
+            created
             <br />
             <span style={{ opacity: '0.7', fontSize: '0.7em', textTransform: 'uppercase' }}>
-              {t.field.time()}: {dayjs(instance?.createDttm).format('HH:mm')}
+              time: {dayjs(instance?.createDttm).format('HH:mm')}
             </span>
           </div>
         }
@@ -52,10 +49,10 @@ export default function Component(props: Props): JSX.Element {
       <Mark
         tooltipContent={
           <div style={{ width: 'max-content' }}>
-            {t.field.updated()}
+            updated
             <br />
             <span style={{ opacity: '0.7', fontSize: '0.7em', textTransform: 'uppercase' }}>
-              {t.field.time()}: {dayjs(instance?.updateDttm).format('HH:mm')}
+              time: {dayjs(instance?.updateDttm).format('HH:mm')}
             </span>
           </div>
         }

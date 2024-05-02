@@ -1,5 +1,4 @@
 import Flex from '~/abstract/flex'
-import { tName, tStrings, useT } from '~/lib/i18n'
 import { toClipboard } from '~/lib/navigator'
 import Button from '~/ui/button'
 import { H2 } from '~/ui/heading'
@@ -23,8 +22,6 @@ const displayName = 'ui-Layout-v-Form'
  * Form
  */
 export default function Component(props: Props): JSX.Element {
-  const t = useT(tStrings, tName)
-
   return (
     <Flex className={c(props.className, displayName)} width='100%' dir='column'>
       <Flex width='100%' alignItems='center' justifyContent='space-between'>
@@ -32,7 +29,7 @@ export default function Component(props: Props): JSX.Element {
           <H2>
             {props.title}{' '}
             {props.name && (
-              <Mark transparent={false} tooltipContent={t.field.name()}>
+              <Mark transparent={false} tooltipContent={'name'}>
                 {props.name}
               </Mark>
             )}

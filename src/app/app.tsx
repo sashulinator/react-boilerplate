@@ -11,7 +11,7 @@ import { QueryClientProvider } from 'react-query'
 import { ReactQueryDevtools } from 'react-query/devtools'
 import { RecoilRoot } from 'recoil'
 
-import '~/shared/dayjs'
+import { init as initLocalization } from '~/shared/localization'
 import { list as notificationList } from '~/shared/notify'
 import { queryClient } from '~/shared/react-query'
 import { RootLayout } from '~/ui/layout'
@@ -21,6 +21,8 @@ import { Container as ToastContainer } from '~/ui/toast'
 import { Container as TooltipContainer } from '~/ui/tooltip'
 
 import ProtectedRoutes from './protected-routes'
+
+void initLocalization()
 
 export default function App(): JSX.Element {
   // prettier-ignore

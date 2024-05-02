@@ -1,4 +1,4 @@
-import { i18n } from '~/shared/i18n'
+import i18n from '~/shared/i18n'
 import { notify } from '~/shared/notify'
 
 export function toClipboard(str: string): void {
