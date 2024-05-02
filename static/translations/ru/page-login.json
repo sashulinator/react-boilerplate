@@ -6,6 +6,6 @@
   "remove": "Удалить",
   "change": "Изменить",
   "success": {
-    "loggedIn": "Вы вошли как {{ username }}"
+    "loggedIn": "Вы вошли как {{username}}"
   }
 }

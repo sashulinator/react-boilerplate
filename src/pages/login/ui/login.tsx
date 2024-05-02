@@ -53,7 +53,8 @@ export default function LoginPage(): JSX.Element {
     onSuccess({ name: data.username })
     navigate(routes.main.path)
     localStorage.setItem(CURRENT_USER, data.username)
-    notify({ data: t('success.loggedIn', { context: data }), type: 'success' })
+
+    notify({ data: t('success.loggedIn', data), type: 'success' })
   }
 }
 

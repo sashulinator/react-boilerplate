@@ -9,9 +9,23 @@ import { assertNoExcessiveKeys } from '../assertions/has-no-excessive-keys'
 import { $RecursiveKeyOf } from '../types/$recursive-key-of'
 import { Schema } from '../types/schema'
 
+/**
+ * Keys:
+ * {
+ *   "friend_male_one": "A boyfriend",
+ *   "friend_female_one": "A girlfriend",
+ *   "friend_male_other": "{{count}} boyfriends",
+ *   "friend_female_other": "{{count}} girlfriends"
+ * }
+ * Sample:
+ * i18next.t('friend', {context: 'male', count: 1}); // -> "A boyfriend"
+ * i18next.t('friend', {context: 'female', count: 1}); // -> "A girlfriend"
+ * i18next.t('friend', {context: 'male', count: 100}); // -> "100 boyfriends"
+ * i18next.t('friend', {context: 'female', count: 100}); // -> "100 girlfriends"
+ **/
 export type TOptions = {
   context?: unknown
-}
+} & { [key: string]: string | number | undefined }
 
 /**
  * Адаптер хук для библиотеки по переводам
