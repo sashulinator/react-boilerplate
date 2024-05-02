@@ -1,5 +1,4 @@
 import Flex from '~/abstract/flex'
-import { tName, tStrings, useT } from '~/lib/i18n'
 import Button from '~/ui/button'
 import { Close } from '~/ui/icon'
 import { c } from '~/utils/core'
@@ -16,8 +15,6 @@ const displayName = 'ui-Item-w-Picked'
  */
 export default function Component(props: Props): JSX.Element {
   const { className, onCloseClick, ...flexProps } = props
-
-  const t = useT(tStrings, tName)
 
   return (
     <Flex
@@ -36,7 +33,7 @@ export default function Component(props: Props): JSX.Element {
       }}
       {...flexProps}
     >
-      <span>{t.picked()}</span>
+      <span>picked</span>
       <Button style={{ transform: 'scale(0.7)', opacity: '0.6' }} round={true} variant='ghost' height='s'>
         <Close onClick={onCloseClick} />
       </Button>

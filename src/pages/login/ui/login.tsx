@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router'
 
 import Flex from '~/abstract/flex'
 import { CURRENT_USER, USER_LIST } from '~/constants/local-storage'
-import { useT } from '~/lib/i18n/use-t'
+import { useTranslation } from '~/shared/localization'
 import { notify } from '~/shared/notify'
 import { routes } from '~/shared/routes'
 import I18nDropdown from '~/ui/language-dropdown'
@@ -12,13 +12,14 @@ import LoginForm, { FormSubmitData, User } from '~/ui/login-form'
 import Logo from '~/ui/logo'
 import ThemeDropdown from '~/ui/theme-dropdown'
 
-import { translations } from '../model/translations'
+import { translationSchema } from './translation-schema'
 
-LoginPage.displayName = 'page-Login'
+export const displayName = 'page-Login'
 
 export default function LoginPage(): JSX.Element {
   const navigate = useNavigate()
-  const t = useT(translations, 'login')
+
+  const { t } = useTranslation(translationSchema)
 
   return (
     <main className='page-Login' style={{ height: '99vh' }}>
@@ -34,11 +35,11 @@ export default function LoginPage(): JSX.Element {
           localStorageName={USER_LIST}
           onSubmit={onSubmit}
           translations={{
-            login: t.login(),
-            add: t.add(),
-            change: t.change(),
-            username: t.username(),
-            password: t.password(),
+            login: t('login'),
+            add: t('add'),
+            change: t('change'),
+            username: t('username'),
+            password: t('password'),
           }}
         />
       </div>
@@ -52,6 +53,8 @@ export default function LoginPage(): JSX.Element {
     onSuccess({ name: data.username })
     navigate(routes.main.path)
     localStorage.setItem(CURRENT_USER, data.username)
-    notify({ data: t.success.loggedIn(), type: 'success' })
+    notify({ data: t('success.loggedIn', { context: data }), type: 'success' })
   }
 }
+
+LoginPage.displayName = displayName

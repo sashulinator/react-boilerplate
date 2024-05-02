@@ -1,5 +1,4 @@
 import { getCmdCtrlSymbol } from '~/lib/formaters'
-import { tName, tStrings, useT } from '~/lib/i18n'
 import Mark from '~/ui/mark'
 import { c } from '~/utils/core'
 import { isMetaCtrlKey, preventDefault } from '~/utils/dom-event'
@@ -21,8 +20,6 @@ const displayName = 'ui-Link-w-Action'
 export default function Component(props: Props): JSX.Element {
   const { tooltipContent, onActionClick, ...linkProps } = props
 
-  const t = useT(tStrings, tName)
-
   return (
     <Mark
       placement='tl'
@@ -31,9 +28,9 @@ export default function Component(props: Props): JSX.Element {
           {tooltipContent}
           <br />
           <br />
-          <span style={{ opacity: '0.7', fontSize: '0.7em', textTransform: 'uppercase' }}>{t.hotkeys()}:</span>
+          <span style={{ opacity: '0.7', fontSize: '0.7em', textTransform: 'uppercase' }}>hotkeys:</span>
           <br />
-          {getCmdCtrlSymbol()} + {t.click()} - {t.openInNewTab()}
+          {getCmdCtrlSymbol()} + click - openInNewTab
         </div>
       }
     >

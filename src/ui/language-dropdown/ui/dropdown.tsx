@@ -1,15 +1,14 @@
 import { ChangeEvent } from 'react'
 
-import { DEFAULT_LANGUAGE } from '~/constants/i18n'
-import { changeLanguage } from '~/lib/i18n/change-language'
-import { getCurrentLanguage } from '~/lib/i18n/get-current-language'
+import { Codes, setCurrent } from '~/shared/localization'
+import { getCurrent } from '~/shared/localization/lib/get-current'
 
 export default function I18nDropdown(): JSX.Element {
-  const options = ['ru', 'en']
+  const options = Object.values(Codes)
 
   return (
     // eslint-disable-next-line jsx-a11y/no-onchange
-    <select onChange={onChange} name='themes' defaultValue={getCurrentLanguage(DEFAULT_LANGUAGE)}>
+    <select onChange={onChange} name='themes' defaultValue={getCurrent()}>
       {options.map((option) => {
         return (
           <option key={option} value={option}>
@@ -21,7 +20,7 @@ export default function I18nDropdown(): JSX.Element {
   )
 
   function onChange(e: ChangeEvent<HTMLSelectElement>): void {
-    changeLanguage(e.target.value)
+    void setCurrent(e.target.value as Codes)
   }
 }
 

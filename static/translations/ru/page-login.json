@@ -1,0 +1,11 @@
+{
+  "login": "Войти",
+  "username": "Пользователь",
+  "password": "Пароль",
+  "add": "Добавить",
+  "remove": "Удалить",
+  "change": "Изменить",
+  "success": {
+    "loggedIn": "Вы вошли как {{ username }}"
+  }
+}

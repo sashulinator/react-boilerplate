@@ -1,0 +1,11 @@
+{
+  "login": "Login",
+  "username": "Username",
+  "password": "Password",
+  "add": "Add",
+  "remove": "Remove",
+  "change": "Change",
+  "success": {
+    "loggedIn": "You are logged in as {{ username }}"
+  }
+}
