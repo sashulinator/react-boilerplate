@@ -10,6 +10,7 @@ import { routes } from '~/shared/routes'
 import I18nDropdown from '~/ui/language-dropdown'
 import LoginForm, { FormSubmitData, User } from '~/ui/login-form'
 import Logo from '~/ui/logo'
+import Md from '~/ui/md'
 import ThemeDropdown from '~/ui/theme-dropdown'
 
 import { translationSchema } from './translation-schema'
@@ -54,7 +55,7 @@ export default function LoginPage(): JSX.Element {
     navigate(routes.main.path)
     localStorage.setItem(CURRENT_USER, data.username)
 
-    notify({ data: t('success.loggedIn', data), type: 'success' })
+    notify({ data: <Md>{t('success.loggedIn', data)}</Md>, type: 'success' })
   }
 }
 

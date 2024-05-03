@@ -6,6 +6,6 @@
   "remove": "Remove",
   "change": "Change",
   "success": {
-    "loggedIn": "You are logged in as {{ username }}"
+    "loggedIn": "You are logged in as `{{ username }}`"
   }
 }
