@@ -8,22 +8,17 @@ export interface Props extends Omit<NotificationProps, 'children'> {
   className?: string | undefined
 }
 
-const displayName = 'ui-Notification-v-Default'
+const displayName = 'ui-Notification-v-Status'
 
 /**
  * Default
  */
 export default function Component(props: Props): JSX.Element {
-  const divChildren =
-    typeof props.notification.data.value === 'string'
-      ? { dangerouslySetInnerHTML: { __html: props.notification.data.value } }
-      : { children: props.notification.data.value }
-
   return (
     <Notification {...props} className={c(displayName)}>
       <div className='content'>
         <div className='indicator' />
-        <div {...(divChildren as any)} />
+        <div className='value'>{props.notification.data.value}</div>
       </div>
     </Notification>
   )
